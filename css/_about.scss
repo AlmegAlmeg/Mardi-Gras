@@ -1,0 +1,196 @@
+//about navigation style
+.about-us-container{
+    max-width: $maxWidth;
+    margin: auto;
+    .about-navigation{
+        background: url("/img/background2.jpg") 100% top;
+        h1{
+            text-align: center;
+            font-family: $headFont2;
+            color: $white;
+            font-size: 4em;
+            padding: 0.5em;
+            text-shadow: 0px 0px 10px $black;
+        }
+        #aboutListToggler{
+            display: none;
+            @include mobile{
+                font-size: 1.5em;
+                padding: 0.5em 0.8em;
+                font-family: $headFont1;
+                background-color: $green;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            background-color: $green;       
+            @include mobile{
+                justify-content: center;
+                flex-direction: column;
+                display: none;
+            }
+            li{
+                font-family: $headFont1;
+                font-size: 2em;
+                cursor: pointer;   
+                padding: 0.5em 1em;
+                color: $black;
+                transition: background-color 0.1s;
+                &:hover{
+                    background-color: $white;
+                }
+                @include tablet{
+                    font-size: 1.5em;
+                    padding: 0.5em 0.8em;
+                }
+            }
+            .menuOpen{
+                background-color: $white;
+            }
+        }
+        .open{
+            display: block;
+        }
+    }
+    .about-section{
+        display: none;
+        background-color: $white;
+        padding: 3%;
+        h1{
+            font-size: 3em;
+            font-family: $headFont2;
+            text-shadow: 0 0 3px $white;
+            @include tablet{
+                font-size: 2em;
+            }
+        }
+        img{
+            float: right;
+            width: 35%;
+            margin: 10px;
+            border-radius: 30px;
+            &:nth-of-type(2){
+                float: left;
+            }
+            @include tablet{
+                width: 50%;
+            }
+            @include mobile{
+                width: 100%;
+            }
+        }
+        .with-border{
+            border: 5px double $black;
+        }
+        p{
+            font-family: $textFont;
+            line-height: 1.5em;
+            font-size: 1.2em;
+            margin: 1.5em 0;
+            span{
+                font-weight: bold;
+            }
+        }
+        h3{
+            font-family: $headFont1;
+            font-size: 1.8em;
+            text-decoration: underline;
+            letter-spacing: 1px;
+            color: $green;
+        }
+    }
+    .history{
+        display: block;
+    }
+}
+
+
+//trivia reference style
+.trivia-reference{
+    max-width: $maxWidth;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 5px;
+        background-color: $yellow;
+        top: 0;
+        left: 0;
+    }
+    h1,h2{
+        font-family: $headFont2;
+        font-size: 4em;
+        padding: 0.5em;
+        background: linear-gradient(to right, $yellow, $green, $purple, $yellow, $green, $purple);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        transition: scale 0.3s;
+        &:nth-child(2):hover{
+            scale: 1.2;
+        }
+        @include tablet{
+            font-size: 3em;
+        }
+        @include mobile{
+            font-size: 2.5em;
+        }
+    }
+    .trivia-reference-grid{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 240px);
+        gap: 10px;
+        @include tablet{
+            grid-template-columns: repeat(2, 240px);
+            gap: 40px;
+        }
+        @include mobile{
+            grid-template-columns: 240px;
+        }
+        .trivia-reference-card{
+            height: 300px;
+            padding: 7%;
+            display: grid;
+            align-content: center;
+            box-shadow:0 0 5px $black;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            h3{
+                font-size: 1.7em;
+                font-family: $textFont;
+                @include mobile{
+                    font-size: 1.5em;
+                }
+            }
+            .reference-card-link{
+                transition: all 0.3s;
+                position: absolute;
+                bottom: -15%;
+                width: 100%;
+                height: 15%;
+                background-color: $yellow;
+                padding-top: 9px;
+                font-size: 1.5em;
+                font-family: $headFont1;
+                a{
+                    color: $black;
+                }
+            }
+            &:hover .reference-card-link{
+                bottom: 0;
+            }
+        }
+    }
+}

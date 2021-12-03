@@ -1,0 +1,33 @@
+.contact-form{
+    max-width: $maxWidth;
+    margin: 3em auto;
+    text-align: center;
+    h2{
+        font-family: $headFont2;
+        font-size: 4em;
+        background: linear-gradient(-45deg, $green, $purple, $yellow);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 1em;
+    }
+    form{
+        margin: auto;
+        width: 40%;
+        padding: 3em;
+        background-color: $green;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 2em;
+        h4{
+            font-family: $headFont1;
+            letter-spacing: 1px;
+            font-size: 1.7em;
+        }
+        input,textarea{
+            font-size: 1.5em;
+            text-align: center;
+        }
+    }
+}
