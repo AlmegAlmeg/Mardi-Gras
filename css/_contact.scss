@@ -1,33 +1,84 @@
-.contact-form{
+.contact-form-section{
     max-width: $maxWidth;
-    margin: 3em auto;
-    text-align: center;
+    margin: 1em auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 2%;
     h2{
         font-family: $headFont2;
         font-size: 4em;
         background: linear-gradient(-45deg, $green, $purple, $yellow);
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        padding: 1em;
+        text-align: center;
+        padding: 0.5em;
     }
     form{
         margin: auto;
-        width: 40%;
         padding: 3em;
-        background-color: $green;
+        box-shadow: 0 0 3px $black;
         border-radius: 10px;
         display: grid;
         justify-content: center;
         align-content: center;
-        gap: 2em;
+        gap: 4em;
         h4{
             font-family: $headFont1;
             letter-spacing: 1px;
-            font-size: 1.7em;
+            font-size: 2.5em;
+            padding: 0.5em;
         }
-        input,textarea{
+        div{
+            position: relative;
+            input,textarea{
+                font-size: 1.2em;
+                font-family: $textFont;
+                border: none;
+                outline: none;
+                width: 100%;
+                background-color: transparent;
+                border-bottom: 3px solid $black;
+            }
+            span{
+                position: absolute;
+                font-size: 1.5em;
+                top: -5px;
+                right: 5px;
+                
+            }
+            .notok{
+                color: rgb(231, 0, 0);
+                display: none;
+            }
+            .ok{
+                color: rgb(0, 180, 0);
+                display: none;
+            }
+            textarea{
+                resize: none;
+                min-height: 200px;
+            }
+            small{
+                font-size: 1.2em;
+                color: rgb(231, 0, 0);
+                font-family: $textFont;
+            }
+        }
+        #sendBtn{
+            border: 3px solid $black;
+            border-radius: 20px;
             font-size: 1.5em;
-            text-align: center;
+            padding: 0.5em;
+            width: 50%;
+            margin: auto;
+            background-color: $yellow;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: $headFont1;
+            &:hover{
+                letter-spacing: 3px;
+            }
         }
     }
 }

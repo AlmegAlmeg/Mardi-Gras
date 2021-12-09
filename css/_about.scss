@@ -167,6 +167,7 @@
             border-radius: 10px;
             position: relative;
             overflow: hidden;
+            background: linear-gradient(-45deg, $yellow, black);
             h3{
                 font-size: 1.7em;
                 font-family: $textFont;

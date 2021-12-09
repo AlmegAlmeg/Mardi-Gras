@@ -56,14 +56,18 @@ footer{
                     padding: 10px;
                     transition: all 0.2s;
                     border-radius: 30px;
-                    &:hover{
-                        background-color: rgba(255, 255, 255, 0.5);
-                        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-                    }
+                    // &:hover{
+                    //     background-color: rgba(255, 255, 255, 0.5);
+                    //     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+                    // }
                     a{
                         color: $black;
                         font-size: 1.3em;
                         font-family: $textFont;
+                        transition: all 0.3s;
+                        &:hover{
+                            letter-spacing: 1px;
+                        }
                     }
                 }
             }
@@ -82,7 +86,6 @@ footer{
                     a{
                         color: $white;
                         padding: 5px;
-                        text-shadow: 0 0 5px rgb(57, 136, 255);
                     }
                 }
             }
