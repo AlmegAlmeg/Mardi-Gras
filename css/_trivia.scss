@@ -4,14 +4,10 @@
         font-family: $headFont2;
         text-align: center;
         font-size:  clamp(2em, 5vw, 5em);
-        width: 90%;
+        padding-top: 5vh;
         background: linear-gradient($black 30%, $white);
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 10%;
     }
     main{
     max-width: $maxWidth;
@@ -25,7 +21,7 @@
     #finishGame{
         border: 3px solid black;
         padding: 0.5em 1em;
-        font-size: clamp(1em, 3vw, 3em);
+        font-size: clamp(2em, 3vw, 3em);
         margin: auto;
         max-width: 50vw;
         font-family: $headFont1;

@@ -1,6 +1,6 @@
 //suppliers popup
-const sliderPopupBtn = document.querySelectorAll('.openSupplierPopup');
-const supplierPopup =document.querySelector('.supplier-popup');
+const sponsersPopupBtn = document.querySelectorAll('.openSponserPopup');
+const sponserPopup =document.querySelector('.sponsers-popup');
 const closePopup =document.querySelector('.closePopup');
 
 const popupHeader = document.querySelector('.popupHeader');
@@ -51,9 +51,9 @@ const popupBackgrounds = [
 
 ];
 
-for(let i = 0; i < sliderPopupBtn.length; i++){
-    sliderPopupBtn[i].addEventListener('click', ()=>{
-        supplierPopup.style.display = "block";
+for(let i = 0; i < sponsersPopupBtn.length; i++){
+    sponsersPopupBtn[i].addEventListener('click', ()=>{
+        sponserPopup.style.display = "block";
         popupHeader.innerHTML = headers[i];
         popupLink.setAttribute('href', links[i]);
         popupLink.setAttribute('target', '_blank');
@@ -65,6 +65,6 @@ for(let i = 0; i < sliderPopupBtn.length; i++){
     })
 }
 closePopup.addEventListener('click',()=>{
-    supplierPopup.style.display = "none";
+    sponserPopup.style.display = "none";
     popup.style.top = "-100vh";
 })

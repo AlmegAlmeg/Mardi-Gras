@@ -1,0 +1,37 @@
+.trivia-float{
+    text-align: center;
+    background-color: $yellow;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding: 1%;
+    box-shadow: 0 0 20px $black;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    margin: 2%;
+    font-family: $headFont2;
+    animation: breath 5s infinite;
+    h2{
+        background: linear-gradient(to right, $purple, $green, $black, $purple, $green, $black, $purple, $green, $black, $purple, $green, $black);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: clamp(1.5em, 3em, 3.5vw);
+    }
+    span{
+        text-shadow: 0 0 5px white;
+        position: absolute;
+        top: -40px;
+        right: 0;
+        font-size: clamp(1em, 2em, 2vw);
+        cursor: pointer;
+    }
+}
+@keyframes breath {
+    50%{
+        scale: 1.1;
+    }
+}

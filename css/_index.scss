@@ -153,8 +153,8 @@
 }
 
 
-//Suppliers section
-.suppliers-section{
+//Sponsers section
+.sponsers-section{
     max-width: $maxWidth;
     margin: auto;
     h1{
@@ -171,7 +171,7 @@
         }
     }
     @for $i from 1 through 8 {
-        .supplier-grid div:nth-of-type(#{$i}) {
+        .sponser-grid div:nth-of-type(#{$i}) {
             background:linear-gradient(transparent, transparent), url("/img/supply#{$i}.jpg");
             background-position: 85%;
             background-size: cover;
@@ -186,7 +186,7 @@
             }
         }
     }
-    .supplier-grid{
+    .sponser-grid{
         padding: 2%;
         display: grid;
         grid-template-columns: repeat(4, minmax(220px, 1fr));
@@ -239,10 +239,10 @@
     }
 }
 
-// supplier popup section
-.supplier-popup{
+// sponsers popup section
+.sponsers-popup{
     display: none;
-    .supplier-container{
+    .sponser-container{
         z-index: 1;
         position: fixed;
         top: 0;
