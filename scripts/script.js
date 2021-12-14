@@ -11,14 +11,14 @@ const triviaAd = document.querySelector('.trivia-float');
 const closeTriviaAd = document.querySelector("#closeTriviaAd");
 
 closeTriviaAd.addEventListener('click', ()=>{
-    triviaAd.style.display = "none";
+    triviaAd.style.opacity = "0";
 })
 
 const showTriviaAd = ()=>{
     if(document.URL.includes("trivia.html")){}
     else{
         setTimeout(()=>{
-            triviaAd.style.display = "flex";
+            triviaAd.style.opacity = "1";
         },2000)
     }
 }

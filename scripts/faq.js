@@ -1,6 +1,6 @@
 const questions = document.querySelectorAll('.question');
 const spans = document.querySelectorAll('.arrow');
-const answers = document.querySelectorAll('.answer')
+const answers = document.querySelectorAll('.answer');
 
 questions.forEach(function(question){
     question.setAttribute('selected', "closed");
