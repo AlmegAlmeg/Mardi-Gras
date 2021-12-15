@@ -12,6 +12,9 @@ const closeTriviaAd = document.querySelector("#closeTriviaAd");
 
 closeTriviaAd.addEventListener('click', ()=>{
     triviaAd.style.opacity = "0";
+    setTimeout(()=>{
+        triviaAd.style.display = "none";
+    },2000)
 })
 
 const showTriviaAd = ()=>{
