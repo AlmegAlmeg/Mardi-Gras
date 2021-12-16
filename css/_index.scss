@@ -50,11 +50,17 @@
         width: 500%;
         display: flex;
         animation: slider 30s ease-in-out infinite alternate;
-        @include mobile{
+        @include tablet{
             animation: none;
+            width: 100%;
         }
         div{
             width: 100%;
+        }
+        .slide2, .slide3, .slide4, .slide5{
+            @include tablet{
+                display: none;
+            }
         }
     }
 }
@@ -177,7 +183,15 @@
             background-size: cover;
             transition: all 0.3s;
             &:hover{
-                background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("img/supply#{$i}.jpg");
+                background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/supply#{$i}.jpg");
+                background-position: 80%;
+                background-size: cover;
+                h2,p,a{
+                    display: block;
+                }
+            }
+            @include tablet{
+                background:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/supply#{$i}.jpg");
                 background-position: 80%;
                 background-size: cover;
                 h2,p,a{
