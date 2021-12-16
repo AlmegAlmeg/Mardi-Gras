@@ -39,7 +39,7 @@
     }
     @for $i from 1 through 5 {
         .slider-inner div:nth-of-type(#{$i}) {
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/sliderimg#{$i}.jpg");
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/sliderimg#{$i}.jpg");
             background-position: center;
             background-size: cover;
         }
@@ -94,7 +94,7 @@
 
 //Content paragraphs section
 .paragraphs{
-    background: linear-gradient(to right, $green 24%,transparent), url("/img/background1.jpg") 100%;
+    background: linear-gradient(to right, $green 24%,transparent), url("img/background1.jpg") 100%;
     box-shadow: inset 0 0 10px $black;
     .inner-paragraphs{
         margin: auto;
@@ -172,12 +172,12 @@
     }
     @for $i from 1 through 8 {
         .sponser-grid div:nth-of-type(#{$i}) {
-            background:linear-gradient(transparent, transparent), url("/img/supply#{$i}.jpg");
+            background:linear-gradient(transparent, transparent), url("img/supply#{$i}.jpg");
             background-position: 85%;
             background-size: cover;
             transition: all 0.3s;
             &:hover{
-                background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/img/supply#{$i}.jpg");
+                background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("img/supply#{$i}.jpg");
                 background-position: 80%;
                 background-size: cover;
                 h2,p,a{
