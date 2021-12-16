@@ -32,10 +32,10 @@
         @include mobile{
             grid-template-columns: repeat(2, minmax(150px, 1fr));
         }
-        .cir1{background: url("img/Gallery/navPhoto1.jpg");}
-        .cir2{background: url("img/Gallery/navPhoto2.jpg");}
-        .cir3{background: url("img/Gallery/navPhoto3.jpg");}
-        .cir4{background: url("img/Gallery/navPhoto4.jpg");}
+        .cir1{background: url("../img/Gallery/navPhoto1.jpg");}
+        .cir2{background: url("../img/Gallery/navPhoto2.jpg");}
+        .cir3{background: url("../img/Gallery/navPhoto3.jpg");}
+        .cir4{background: url("../img/Gallery/navPhoto4.jpg");}
         .grid-circle{
             background-position: center;
             background-size: cover;
@@ -109,17 +109,17 @@
         }
     }
     .floats-oaks{
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.3), $purple), url("img/Gallery/navPhoto1.jpg")left;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.3), $purple), url("../img/Gallery/navPhoto1.jpg")left;
     }
     .indians{
-        background: linear-gradient(to left, rgba(0, 0, 0, 0.3), $yellow), url("img/Gallery/navPhoto2.jpg")left;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.3), $yellow), url("../img/Gallery/navPhoto2.jpg")left;
         background-size: cover;
     }
     .costumes{
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.3), $purple), url("img/Gallery/navPhoto3.jpg")left
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.3), $purple), url("../img/Gallery/navPhoto3.jpg")left
     }
     .parades{
-        background: linear-gradient(to left, rgba(0, 0, 0, 0.3), $yellow), url("img/Gallery/navPhoto4.jpg")left;background-size: cover;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.3), $yellow), url("../img/Gallery/navPhoto4.jpg")left;background-size: cover;
     }
 
     //galleries styles
