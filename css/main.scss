@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap');
 
 //Variables section
+:root{
+    --black: #0d0d0d;
+    --white: #f2f2f2;
+    --yellow: #f2cc0f;
+    --green: #8cbf3f;
+    --purple: #9453a6;
+    --secondaryGrey: rgba(182, 182, 182, 0.3);
+}
 $black: #0d0d0d;
 $white: #f2f2f2;
 $yellow: #f2cc0f;
